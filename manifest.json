@@ -1,0 +1,32 @@
+{
+  "name": "Page Komayō",
+  "short_name": "Komayō",
+  "description": "Dans la lumière mystique de la pleine lune, découvrez l&#39;histoire de Komayō, une yōkai ensorcelante du folklore japonais. Séduisante et mortelle, elle attire les âmes égarées dans une partie de ōgi, absorbant leur énergie vitale et les condamnant à un tourment éternel. C&#39;est un récit d&#39;attraction fatale et de désir non contrôlé, un avertissement poignant contre les dangers de la tentation.",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "favicon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
