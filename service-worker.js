@@ -9,7 +9,7 @@ self.addEventListener('install', (event) => {
         '/manifest.json',
         '/komayo-souriant-au-dessus-de-l-adversaire-endormi.png',
         '/komayo-souriant-au-dessus-de-l-adversaire-endormi.webp',
-        '/la-partie-inachevee/',
+          '/la-partie-inachevee/',
             '/la-partie-inachevee/travail-prolonge-apres-heure-reglementaire.webp',
             '/la-partie-inachevee/depart-brusque-bureau-atmosphere-confinee.webp',
             '/la-partie-inachevee/paysage-nocturne-osaka-lumieres-astres.webp',
