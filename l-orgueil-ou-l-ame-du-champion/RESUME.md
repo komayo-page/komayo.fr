@@ -1,3 +1,0 @@
-Sur le chemin du plus grand tournoi de sa vie, Takeshi, champion du monde d'ōgi, se retrouve face à un adversaire inattendu lors d'un voyage en train nocturne. Cette mystérieuse inconnue au style à la fois séduisant et déconcertant le pousse dans ses retranchements et le conduit dans une lutte qui dépasse le simple cadre du plateau de jeu.
-
-Au fur et à mesure que le train avance dans la nuit, le duel se transforme en une épreuve d'endurance mentale et physique, qui met les nerfs de Takeshi à rude épreuve. Entre tension palpable, enjeux cachés et révélations bouleversantes, ce voyage en train est une épreuve qu'il n'est pas prêt d'oublier.
