@@ -23,12 +23,42 @@
     <meta name="twitter:image" content="https://fr.komayo.page/recits/l-amour-sous-les-cerisiers/couverture.webp">
 
     <link rel="canonical" href="https://fr.komayo.page/recits/l-amour-sous-les-cerisiers/">
-    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon-episode-3-dark.svg">
 
     <style media="screen">
       :root {
         --article-title-text-color: #f55;
         --article-title-shadow-color: #500;
+      }
+
+      body > nav a:nth-child(3) img {
+        opacity: 1;
+      }
+    </style>
+
+    <style media="screen">
+      @media (prefers-color-scheme: light) {
+        :root {
+          --background-color: #ffdae9;
+          --color: black;
+          --link-color: #500;
+          --quote-color: #f55;
+          --shadow-color: #fff1f7;
+          --article-title-text-color: #f55;
+          --article-title-shadow-color: #fff1f7;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-color: #111;
+          --color: white;
+          --link-color: #f55;
+          --quote-color: #f289b3;
+          --shadow-color: #000;
+          --article-title-text-color: #f55;
+          --article-title-shadow-color: #500;
+        }
       }
 
       body > nav a:nth-child(3) img {
@@ -66,14 +96,58 @@
 
   <body>
     <header>
-      <a href="../../"><img decoding="async" alt="Komayō" title="Komayō" src="komayo.svg"></a>
+      <a href="../../">
+        <picture>
+          <source srcset="komayo-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="komayo-dark.svg"
+            alt="Komayō"
+            title="Komayō"
+            decoding="async">
+        </picture>
+      </a>
     </header>
 
     <nav>
-      <a href="../rencontre-au-bar-de-la-regence/"><img src="../rencontre-au-bar-de-la-regence/favicon.svg" alt="Episode 1" title="Rencontre au Bar de la Régence"></a>
-      <a href="../l-orgueil-ou-l-ame-du-champion/"><img src="../l-orgueil-ou-l-ame-du-champion/favicon.svg" alt="Episode 2" title="L'orgueil ou l'âme du Champion"></a>
-      <a href="../l-amour-sous-les-cerisiers/"><img src="../l-amour-sous-les-cerisiers/favicon.svg" alt="Episode 3" title="L'Amour sous les cerisiers"></a>
-      <a href="../le-souffle-du-renard/"><img src="../le-souffle-du-renard/favicon.svg" alt="Episode 4" title="Le Souffle du Renard"></a>
+      <a href="../rencontre-au-bar-de-la-regence/">
+        <picture>
+          <source srcset="../rencontre-au-bar-de-la-regence/favicon-episode-1-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../rencontre-au-bar-de-la-regence/favicon-episode-1-dark.svg"
+            alt="Episode 1"
+            title="Rencontre au Bar de la Régence">
+        </picture>
+      </a>
+
+      <a href="../l-orgueil-ou-l-ame-du-champion/">
+        <picture>
+          <source srcset="../l-orgueil-ou-l-ame-du-champion/favicon-episode-2-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../l-orgueil-ou-l-ame-du-champion/favicon-episode-2-dark.svg"
+            alt="Episode 2"
+            title="L'orgueil ou l'âme du Champion">
+        </picture>
+      </a>
+
+      <a href="../l-amour-sous-les-cerisiers/">
+        <picture>
+          <source srcset="../l-amour-sous-les-cerisiers/favicon-episode-3-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../l-amour-sous-les-cerisiers/favicon-episode-3-dark.svg"
+            alt="Episode 3"
+            title="L'Amour sous les cerisiers">
+        </picture>
+      </a>
+
+      <a href="../le-souffle-du-renard/">
+        <picture>
+          <source srcset="../le-souffle-du-renard/favicon-episode-4-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../le-souffle-du-renard/favicon-episode-4-dark.svg"
+            alt="Episode 4"
+            title="Le Souffle du Renard">
+        </picture>
+      </a>
     </nav>
 
     <article>
@@ -165,7 +239,7 @@
       <p>
         <img
           src="jardin-de-komayo.jpg"
-          alt="Image artistique représentant le jardin mystique de Komayo sous un clair de lune, évoquant une ambiance surnaturelle"
+          alt="Le jardin mystique de Komayo sous un clair de lune, évoquant une ambiance surnaturelle."
           title="Le Jardin Mystique de Komayo - Une Atmosphère Surnaturelle Sous le Clair de Lune"
           height="1024"
           width="1024">
@@ -201,7 +275,7 @@
       <p>
         <img
           src="homme-et-femme-dans-champ-de-ble-coucher-de-soleil-reve-mysterieux.jpg"
-          alt="Silhouette masculine face à une femme dans un champ de blé au coucher du soleil, évoquant un rêve mystérieux"
+          alt="Silhouette masculine face à une femme dans un champ de blé au coucher du soleil, évoquant un rêve mystérieux."
           title="Le Rêve de Jun: Une Rencontre Mystique dans un Champ Doré au Crépuscule"
           height="1024"
           width="1024">
@@ -541,15 +615,11 @@
       <p>
         <img
           src="recherche-de-la-prochaine-victime.jpg"
-          alt="Komayō, enveloppée de lueur lunaire dans un jardin crépusculaire, ses yeux scrutant l'horizon"
+          alt="Komayō, enveloppée de lueur lunaire dans un jardin crépusculaire, ses yeux scrutant l'horizon."
           title="La Quête de Komayō: Une Lumière d'Âme dans le Ballet de la Lune"
           height="1024"
           width="1024">
       </p>
     </article>
-
-    <footer>
-      &copy; 2023 Cyril Veltin
-    </footer>
   </body>
 </html>

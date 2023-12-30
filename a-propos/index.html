@@ -21,9 +21,28 @@
     <link rel="icon" type="image/svg+xml" sizes="any" href="../favicon.svg">
 
     <style media="screen">
-      :root {
-        --article-title-text-color: #fff;
-        --article-title-shadow-color: #333;
+      @media (prefers-color-scheme: light) {
+        :root {
+          --background-color: white;
+          --color: black;
+          --link-color: #6d071a;
+          --quote-color: #6d071a;
+          --shadow-color: #ccc;
+          --article-title-text-color: #000;
+          --article-title-shadow-color: #ccc;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-color: black;
+          --color: white;
+          --link-color: #e37f98;
+          --quote-color: #e37f98;
+          --shadow-color: #58354d;
+          --article-title-text-color: #fff;
+          --article-title-shadow-color: #333;
+        }
       }
     </style>
 
@@ -34,17 +53,57 @@
 
   <body>
     <header>
-      <a href="../"><img
-        src="../komayo.svg"
-        alt="Komayō"
-        title="Komayō"></a>
+      <a href="../">
+        <picture>
+          <source srcset="../komayo-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../komayo-dark.svg"
+            alt="Komayō"
+            title="Komayō">
+        </picture>
+      </a>
     </header>
 
     <nav>
-      <a href="../recits/rencontre-au-bar-de-la-regence/"><img src="../recits/rencontre-au-bar-de-la-regence/favicon.svg" alt="Episode 1" title="Rencontre au Bar de la Régence"></a>
-      <a href="../recits/l-orgueil-ou-l-ame-du-champion/"><img src="../recits/l-orgueil-ou-l-ame-du-champion/favicon.svg" alt="Episode 2" title="L'orgueil ou l'âme du Champion"></a>
-      <a href="../recits/l-amour-sous-les-cerisiers/"><img src="../recits/l-amour-sous-les-cerisiers/favicon.svg" alt="Episode 3" title="L'Amour sous les cerisiers"></a>
-      <a href="../recits/le-souffle-du-renard/"><img src="../recits/le-souffle-du-renard/favicon.svg" alt="Episode 4" title="Le Souffle du Renard"></a>
+      <a href="../recits/rencontre-au-bar-de-la-regence/">
+        <picture>
+          <source srcset="../recits/rencontre-au-bar-de-la-regence/favicon-episode-1-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../recits/rencontre-au-bar-de-la-regence/favicon-episode-1-dark.svg"
+            alt="Episode 1"
+            title="Rencontre au Bar de la Régence">
+        </picture>
+      </a>
+
+      <a href="../recits/l-orgueil-ou-l-ame-du-champion/">
+        <picture>
+          <source srcset="../recits/l-orgueil-ou-l-ame-du-champion/favicon-episode-2-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../recits/l-orgueil-ou-l-ame-du-champion/favicon-episode-2-dark.svg"
+            alt="Episode 2"
+            title="L'orgueil ou l'âme du Champion">
+        </picture>
+      </a>
+
+      <a href="../recits/l-amour-sous-les-cerisiers/">
+        <picture>
+          <source srcset="../recits/l-amour-sous-les-cerisiers/favicon-episode-3-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../recits/l-amour-sous-les-cerisiers/favicon-episode-3-dark.svg"
+            alt="Episode 3"
+            title="L'Amour sous les cerisiers">
+        </picture>
+      </a>
+
+      <a href="../recits/le-souffle-du-renard/">
+        <picture>
+          <source srcset="../recits/le-souffle-du-renard/favicon-episode-4-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../recits/le-souffle-du-renard/favicon-episode-4-dark.svg"
+            alt="Episode 4"
+            title="Le Souffle du Renard">
+        </picture>
+      </a>
     </nav>
 
     <article>
@@ -78,9 +137,5 @@
         Komayō, sans jamais prononcer son nom, sans jamais dévoiler son jeu, est la poésie inachevée, le secret gardé par l'aube, l'énigme que la nuit refuse de révéler.
       </p>
     </article>
-
-    <footer>
-      &copy; 2023 Cyril Veltin
-    </footer>
   </body>
 </html>

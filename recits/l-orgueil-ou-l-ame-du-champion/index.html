@@ -23,12 +23,31 @@
     <meta name="twitter:image" content="https://fr.komayo.page/recits/l-orgueil-ou-l-ame-du-champion/couverture.webp">
 
     <link rel="canonical" href="https://fr.komayo.page/recits/l-orgueil-ou-l-ame-du-champion/">
-    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon-episode-2-dark.svg">
 
     <style media="screen">
-      :root {
-        --article-title-text-color: #0ff;
-        --article-title-shadow-color: #000080;
+      @media (prefers-color-scheme: light) {
+        :root {
+          --background-color: #f4fefe;
+          --color: black;
+          --link-color: #006;
+          --quote-color: #000080;
+          --shadow-color: #fff;
+          --article-title-text-color: #000080;
+          --article-title-shadow-color: #0ff;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-color: #111;
+          --color: white;
+          --link-color: #f4fefe;
+          --quote-color: #0ff;
+          --shadow-color: #343b50;
+          --article-title-text-color: #0ff;
+          --article-title-shadow-color: #000080;
+        }
       }
 
       body > nav a:nth-child(2) img {
@@ -66,14 +85,58 @@
 
   <body>
     <header>
-      <a href="../../"><img decoding="async" alt="Komayō" title="Komayō" src="komayo.svg"></a>
+      <a href="../../">
+        <picture>
+          <source srcset="komayo-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="komayo-dark.svg"
+            alt="Komayō"
+            title="Komayō"
+            decoding="async">
+        </picture>
+      </a>
     </header>
 
     <nav>
-      <a href="../rencontre-au-bar-de-la-regence/"><img src="../rencontre-au-bar-de-la-regence/favicon.svg" alt="Episode 1" title="Rencontre au Bar de la Régence"></a>
-      <a href="../l-orgueil-ou-l-ame-du-champion/"><img src="../l-orgueil-ou-l-ame-du-champion/favicon.svg" alt="Episode 2" title="L'orgueil ou l'âme du Champion"></a>
-      <a href="../l-amour-sous-les-cerisiers/"><img src="../l-amour-sous-les-cerisiers/favicon.svg" alt="Episode 3" title="L'Amour sous les cerisiers"></a>
-      <a href="../le-souffle-du-renard/"><img src="../le-souffle-du-renard/favicon.svg" alt="Episode 4" title="Le Souffle du Renard"></a>
+      <a href="../rencontre-au-bar-de-la-regence/">
+        <picture>
+          <source srcset="../rencontre-au-bar-de-la-regence/favicon-episode-1-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../rencontre-au-bar-de-la-regence/favicon-episode-1-dark.svg"
+            alt="Episode 1"
+            title="Rencontre au Bar de la Régence">
+        </picture>
+      </a>
+
+      <a href="../l-orgueil-ou-l-ame-du-champion/">
+        <picture>
+          <source srcset="../l-orgueil-ou-l-ame-du-champion/favicon-episode-2-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../l-orgueil-ou-l-ame-du-champion/favicon-episode-2-dark.svg"
+            alt="Episode 2"
+            title="L'orgueil ou l'âme du Champion">
+        </picture>
+      </a>
+
+      <a href="../l-amour-sous-les-cerisiers/">
+        <picture>
+          <source srcset="../l-amour-sous-les-cerisiers/favicon-episode-3-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../l-amour-sous-les-cerisiers/favicon-episode-3-dark.svg"
+            alt="Episode 3"
+            title="L'Amour sous les cerisiers">
+        </picture>
+      </a>
+
+      <a href="../le-souffle-du-renard/">
+        <picture>
+          <source srcset="../le-souffle-du-renard/favicon-episode-4-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../le-souffle-du-renard/favicon-episode-4-dark.svg"
+            alt="Episode 4"
+            title="Le Souffle du Renard">
+        </picture>
+      </a>
     </nav>
 
     <article>
@@ -92,23 +155,25 @@
 
       <blockquote cite="https://fr.komayo.page/">
         <p>
-          <a href="../../" title="Légende urbaine">On raconte</a> qu'au Japon, dans la région du Kansai, lorsque la pleine lune brille haut dans le ciel, une créature aux charmes ensorcelants fait son apparition, cherchant à attirer les passants égarés.
+          Dans les cercles de joueurs de ōgi, jeu traditionnel japonais similaire au shōgi, circule <a href="../../" title="Légende urbaine">une histoire intrigante</a>.
+          Cette histoire, bien connue dans la région du Kansai, parle de Komayō, une figure aussi énigmatique que fascinante, évoquée lors des nuits de pleine lune.
         </p>
 
         <p>
-          D'une beauté envoûtante, Komayō captive les infortunés par son charme mystérieux en leur suggérant de manière perfide une partie de ōgi, une variante du traditionnel jeu d'échecs japonais.
-          Ceux qui acceptent son invitation se retrouvent emportés dans un labyrinthe de manœuvres et de stratégies.
+          Selon cette histoire, Komayō, d'une beauté captivante, attire les joueurs égarés en leur proposant une partie d'ōgi.
+          Sa présence et son charme mystérieux semblent envelopper les parties d'une aura particulière, emmenant les joueurs dans un tourbillon de stratégies et de manœuvres plus profondes que le simple jeu.
         </p>
 
         <p>
-          Toutefois, à mesure que le jeu progresse, une lassitude insidieuse s'empare des joueurs, émoussant leur jugement et affaiblissant leur corps, les conduisant inévitablement vers un sommeil aussi profond qu'immuable.
+          Il se dit que ceux qui jouent contre elle expérimentent un sentiment de lassitude progressif, une fatigue qui s'infiltre dans leur esprit et leur corps.
+          Ce phénomène, décrit par certains comme surnaturel, les plongerait dans un sommeil profond et irréversible, un état presque mythique.
         </p>
 
         <p>
-          C'est durant ce repos abyssal que Komayō dévoile sa véritable nature.
-          Elle s'empare de leur énergie vitale, ne laissant derrière elle que l'écho vide de leur ancienne vigueur.
-          Les âmes de ces victimes malheureuses se voient alors transformées en yūrei, et condamnées à une errance sans fin.
-          Hantées par le souvenir envoûtant de Komayō et tourmentées par l'espoir vain de terminer leur partie de ōgi, elles errent éternellement, prisonnières d'une quête inachevée et d'un rêve déchu.
+          La part la plus mystérieuse de cette histoire concerne la nature véritable de Komayō.
+          On raconte qu'en ces moments de vulnérabilité extrême, elle dévoilerait sa véritable forme et siphonnerait l'énergie vitale des joueurs, ne laissant derrière elle qu'un sentiment de vide et de perte.
+          Ces joueurs, épuisés par cette expérience, se transformeraient en yūrei, des esprits errants condamnés à une recherche incessante.
+          Hantés par le souvenir de leur rencontre avec Komayō et par le désir inassouvi de terminer leur partie, ces esprits seraient piégés dans une errance sans fin.
         </p>
 
         <p>
@@ -809,9 +874,5 @@
           width="1024">
       </p>
     </article>
-
-    <footer>
-      &copy; 2023 Cyril Veltin
-    </footer>
   </body>
 </html>

@@ -24,12 +24,31 @@
 
     <link rel="alternate" hreflang="en" href="https://en.komayo.page/stories/encounter-at-the-bar-de-la-regence/">
     <link rel="canonical" href="https://fr.komayo.page/recits/rencontre-au-bar-de-la-regence/">
-    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon-episode-1-dark.svg">
 
     <style media="screen">
-      :root {
-        --article-title-text-color: #f6ff00;
-        --article-title-shadow-color: #000;
+      @media (prefers-color-scheme: light) {
+        :root {
+          --background-color: #ddd1bc;
+          --color: black;
+          --link-color: #4e3d28;
+          --quote-color: #7e5835;
+          --shadow-color: #fff0bc;
+          --article-title-text-color: #000;
+          --article-title-shadow-color: #f6ff00;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-color: #111;
+          --color: white;
+          --link-color: #f0c300;
+          --quote-color: yellow;
+          --shadow-color: #000;
+          --article-title-text-color: #f6ff00;
+          --article-title-shadow-color: #000;
+        }
       }
 
       body > nav a:nth-child(1) img {
@@ -67,14 +86,58 @@
 
   <body>
     <header>
-      <a href="../../"><img decoding="async" alt="Komayō" title="Komayō" src="komayo.svg"></a>
+      <a href="../../">
+        <picture>
+          <source srcset="komayo-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="komayo-dark.svg"
+            alt="Komayō"
+            title="Komayō"
+            decoding="async">
+        </picture>
+      </a>
     </header>
 
     <nav>
-      <a href="../rencontre-au-bar-de-la-regence/"><img src="../rencontre-au-bar-de-la-regence/favicon.svg" alt="Episode 1" title="Rencontre au Bar de la Régence"></a>
-      <a href="../l-orgueil-ou-l-ame-du-champion/"><img src="../l-orgueil-ou-l-ame-du-champion/favicon.svg" alt="Episode 2" title="L'orgueil ou l'âme du Champion"></a>
-      <a href="../l-amour-sous-les-cerisiers/"><img src="../l-amour-sous-les-cerisiers/favicon.svg" alt="Episode 3" title="L'Amour sous les cerisiers"></a>
-      <a href="../le-souffle-du-renard/"><img src="../le-souffle-du-renard/favicon.svg" alt="Episode 4" title="Le Souffle du Renard"></a>
+      <a href="../rencontre-au-bar-de-la-regence/">
+        <picture>
+          <source srcset="../rencontre-au-bar-de-la-regence/favicon-episode-1-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../rencontre-au-bar-de-la-regence/favicon-episode-1-dark.svg"
+            alt="Episode 1"
+            title="Rencontre au Bar de la Régence">
+        </picture>
+      </a>
+
+      <a href="../l-orgueil-ou-l-ame-du-champion/">
+        <picture>
+          <source srcset="../l-orgueil-ou-l-ame-du-champion/favicon-episode-2-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../l-orgueil-ou-l-ame-du-champion/favicon-episode-2-dark.svg"
+            alt="Episode 2"
+            title="L'orgueil ou l'âme du Champion">
+        </picture>
+      </a>
+
+      <a href="../l-amour-sous-les-cerisiers/">
+        <picture>
+          <source srcset="../l-amour-sous-les-cerisiers/favicon-episode-3-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../l-amour-sous-les-cerisiers/favicon-episode-3-dark.svg"
+            alt="Episode 3"
+            title="L'Amour sous les cerisiers">
+        </picture>
+      </a>
+
+      <a href="../le-souffle-du-renard/">
+        <picture>
+          <source srcset="../le-souffle-du-renard/favicon-episode-4-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../le-souffle-du-renard/favicon-episode-4-dark.svg"
+            alt="Episode 4"
+            title="Le Souffle du Renard">
+        </picture>
+      </a>
     </nav>
 
     <article>
@@ -130,7 +193,7 @@
         </p>
 
         <p>
-          Ce livre est le témoignage poignant de l'une d'entre elles.
+          Ce récit est le témoignage poignant de l'une d'entre elles.
         </p>
       </blockquote>
 
@@ -551,7 +614,7 @@
       </p>
 
       <p>
-        Sur le papier, un simple mot, <q>Merci</q>, suivi d'un prénom &ndash; <q><a href="../../a-propos/" title="L'Énigme du Crépuscule">Komayō</a></q>.
+        Sur le papier, un simple mot, <q>Merci</q>, suivi d'un prénom &ndash; <q>Komayō</q>.
         La signature est élégante, un souvenir fugace mais marquant de cette rencontre éphémère au Bar de la Régence, une nuit passée à jouer aux échecs avec l'énigmatique et fascinante Komayō.
       </p>
 
@@ -594,7 +657,7 @@
         Un chapitre de ma vie s'est clos sans que je ne m'en rende compte, et un autre, inexploré, commence à se dessiner.
         Imprégné du souvenir de Komayō et de notre partie d'échecs inachevée, je suis inconscient du fait que j'ai franchi une ligne invisible, succombé à la tentation.
         Un sentiment doux-amer se mêle à mon désir de la revoir.
-        Au cœur de la nuit, je crois simplement rentrer chez moi, ignorant que j'ai entamé un voyage bien plus profond, une quête intangible pour retrouver Komayō, terminer notre duel, et peut-être, découvrir une forme inattendue de rédemption.
+        Au cœur de la nuit, je crois simplement rentrer chez moi, ignorant que j'ai entamé un voyage bien plus profond, une quête intangible pour retrouver <a href="../../a-propos/" title="L'Énigme du Crépuscule">Komayō</a>, terminer notre duel, et peut-être, découvrir une forme inattendue de rédemption.
       </p>
 
       <p>
@@ -606,9 +669,5 @@
           width="1024">
       </p>
     </article>
-
-    <footer>
-      &copy; 2023 Cyril Veltin
-    </footer>
   </body>
 </html>
