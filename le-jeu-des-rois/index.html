@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <title>Ōgi</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="La variante romantique du Shōgi sur un échiquier 8x8.">
+    <meta name="keywords" content="histoire de fantômes, Komayō, obake, ōgi, shōgi, yōkai, yūrei">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Cyril Veltin">
+    <meta property="og:title" content="Ōgi">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://fr.komayo.page/ogi/">
+    <meta property="og:image" content="https://fr.komayo.page/ogi/img/position-initiale-d-une-partie-de-ogi-large.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ōgi">
+    <meta name="twitter:image" content="https://fr.komayo.page/ogi/img/position-initiale-d-une-partie-de-ogi-large.webp">
+
+    <link rel="canonical" href="https://fr.komayo.page/ogi/">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="../favicon.svg">
+
+    <style media="screen">
+      @media (prefers-color-scheme: light) {
+        :root {
+          --background-color: white;
+          --color: black;
+          --link-color: #6d071a;
+          --quote-color: #6d071a;
+          --shadow-color: #ccc;
+          --article-title-text-color: #000;
+          --article-title-shadow-color: #ccc;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-color: black;
+          --color: white;
+          --link-color: #e37f98;
+          --quote-color: #e37f98;
+          --shadow-color: #58354d;
+          --article-title-text-color: #fff;
+          --article-title-shadow-color: #333;
+        }
+      }
+    </style>
+
+    <link rel="stylesheet" href="../css/all.css" media="all">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+    <link rel="stylesheet" href="../css/screen.css" media="screen">
+  </head>
+
+  <body>
+    <header>
+      <a href="../">
+        <picture>
+          <source srcset="../komayo-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../komayo-dark.svg"
+            alt="Komayō"
+            title="Komayō">
+        </picture>
+      </a>
+    </header>
+
+    <article>
+      <h1>Ōgi</h1>
+
+      <h2>Présentation</h2>
+
+      <blockquote>
+        <p>
+          <strong>Ōgi</strong> (王棋, romaji : ōgi) est un jeu de plateau stratégique dérivé du shōgi, la forme japonaise des échecs.
+          Joué sur un plateau de 8x8, cette variante enchanteresse apporte une touche unique avec l'ajout d'une pièce spéciale&nbsp;: la <cite>Princesse</cite>.
+          Cet élément nouveau confère au jeu un air de romantisme et une plus grande profondeur stratégique.
+        </p>
+      </blockquote>
+
+      <h2>Position initiale</h2>
+
+      <picture>
+        <source type="image/webp" srcset="img/position-initiale-d-une-partie-de-ogi-small.webp" media="(max-width: 300px)" height="300" width="300">
+        <source type="image/webp" srcset="img/position-initiale-d-une-partie-de-ogi-large.webp" media="(min-width: 300px)" height="828" width="828">
+
+        <img
+          src="img/position-initiale-d-une-partie-de-ogi-fallback.jpg"
+          alt="Position initiale d'une partie de ōgi."
+          title="Ōgi : Position initiale"
+          height="828"
+          width="828">
+      </picture>
+
+      <h2>Pièces</h2>
+
+      <p>Joueur du Nord</p>
+
+      <table border="1">
+        <tbody>
+          <tr>
+            <th>Nom Chinois
+            </th>
+            <th>Nom Anglais
+            </th>
+            <th>Nom Japonais
+            </th>
+            <th>Abrév.
+            </th>
+            <th>Caractère Han
+            </th>
+          </tr>
+          <tr>
+            <td>角行
+            </td>
+            <td>Bishop
+            </td>
+            <td>角行
+            </td>
+            <td>b
+            </td>
+            <td>角
+            </td>
+          </tr>
+          <tr>
+            <td>玉將
+            </td>
+            <td>King
+            </td>
+            <td>玉将
+            </td>
+            <td>k
+            </td>
+            <td>玉
+            </td>
+          </tr>
+          <tr>
+            <td>桂馬
+            </td>
+            <td>Knight
+            </td>
+            <td>桂馬
+            </td>
+            <td>n
+            </td>
+            <td>桂
+            </td>
+          </tr>
+          <tr>
+            <td>香車
+            </td>
+            <td>Lance
+            </td>
+            <td>香車
+            </td>
+            <td>l
+            </td>
+            <td>香
+            </td>
+          </tr>
+          <tr>
+            <td>步兵
+            </td>
+            <td>Pawn
+            </td>
+            <td>歩兵
+            </td>
+            <td>p
+            </td>
+            <td>歩
+            </td>
+          </tr>
+          <tr>
+            <td>玉妃
+            </td>
+            <td>Princess
+            </td>
+            <td>玉妃
+            </td>
+            <td>i
+            </td>
+            <td>妃
+            </td>
+          </tr>
+          <tr>
+            <td>龍馬
+            </td>
+            <td>Promoted Bishop
+            </td>
+            <td>龍馬
+            </td>
+            <td>+b
+            </td>
+            <td>馬
+            </td>
+          </tr>
+          <tr>
+            <td>成桂
+            </td>
+            <td>Promoted Knight
+            </td>
+            <td>成桂
+            </td>
+            <td>+n
+            </td>
+            <td>圭
+            </td>
+          </tr>
+          <tr>
+            <td>成香
+            </td>
+            <td>Promoted Lance
+            </td>
+            <td>成香
+            </td>
+            <td>+l
+            </td>
+            <td>杏
+            </td>
+          </tr>
+          <tr>
+            <td>成步
+            </td>
+            <td>Promoted Pawn
+            </td>
+            <td>と金
+            </td>
+            <td>+p
+            </td>
+            <td>と
+            </td>
+          </tr>
+          <tr>
+            <td>女神
+            </td>
+            <td>Promoted Princess
+            </td>
+            <td>女神
+            </td>
+            <td>+i
+            </td>
+            <td>神
+            </td>
+          </tr>
+          <tr>
+            <td>龍王
+            </td>
+            <td>Promoted Rook
+            </td>
+            <td>龍王
+            </td>
+            <td>+r
+            </td>
+            <td>龍
+            </td>
+          </tr>
+          <tr>
+            <td>成銀
+            </td>
+            <td>Promoted Silver General
+            </td>
+            <td>成銀
+            </td>
+            <td>+s
+            </td>
+            <td>全
+            </td>
+          </tr>
+          <tr>
+            <td>飛車
+            </td>
+            <td>Rook
+            </td>
+            <td>飛車
+            </td>
+            <td>r
+            </td>
+            <td>飛
+            </td>
+          </tr>
+          <tr>
+            <td>銀將
+            </td>
+            <td>Silver General
+            </td>
+            <td>銀将
+            </td>
+            <td>s
+            </td>
+            <td>銀
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Joueur du Sud</p>
+
+      <table border="1">
+        <tbody>
+          <tr>
+            <th>Nom Chinois
+            </th>
+            <th>Nom Anglais
+            </th>
+            <th>Nom Japonais
+            </th>
+            <th>Abrév.
+            </th>
+            <th>Caractère Han
+            </th>
+          </tr>
+          <tr>
+            <td>角行
+            </td>
+            <td>Bishop
+            </td>
+            <td>角行
+            </td>
+            <td>B
+            </td>
+            <td>角
+            </td>
+          </tr>
+          <tr>
+            <td>王將
+            </td>
+            <td>King
+            </td>
+            <td>王将
+            </td>
+            <td>K
+            </td>
+            <td>王
+            </td>
+          </tr>
+          <tr>
+            <td>桂馬
+            </td>
+            <td>Knight
+            </td>
+            <td>桂馬
+            </td>
+            <td>N
+            </td>
+            <td>桂
+            </td>
+          </tr>
+          <tr>
+            <td>香車
+            </td>
+            <td>Lance
+            </td>
+            <td>香車
+            </td>
+            <td>L
+            </td>
+            <td>香
+            </td>
+          </tr>
+          <tr>
+            <td>步兵
+            </td>
+            <td>Pawn
+            </td>
+            <td>歩兵
+            </td>
+            <td>P
+            </td>
+            <td>歩
+            </td>
+          </tr>
+          <tr>
+            <td>王妃
+            </td>
+            <td>Princess
+            </td>
+            <td>王妃
+            </td>
+            <td>I
+            </td>
+            <td>妃
+            </td>
+          </tr>
+          <tr>
+            <td>龍馬
+            </td>
+            <td>Promoted Bishop
+            </td>
+            <td>龍馬
+            </td>
+            <td>+B
+            </td>
+            <td>馬
+            </td>
+          </tr>
+          <tr>
+            <td>成桂
+            </td>
+            <td>Promoted Knight
+            </td>
+            <td>成桂
+            </td>
+            <td>+N
+            </td>
+            <td>圭
+            </td>
+          </tr>
+          <tr>
+            <td>成香
+            </td>
+            <td>Promoted Lance
+            </td>
+            <td>成香
+            </td>
+            <td>+L
+            </td>
+            <td>杏
+            </td>
+          </tr>
+          <tr>
+            <td>成步
+            </td>
+            <td>Promoted Pawn
+            </td>
+            <td>と金
+            </td>
+            <td>+P
+            </td>
+            <td>と
+            </td>
+          </tr>
+          <tr>
+            <td>女神
+            </td>
+            <td>Promoted Princess
+            </td>
+            <td>女神
+            </td>
+            <td>+I
+            </td>
+            <td>神
+            </td>
+          </tr>
+          <tr>
+            <td>龍王
+            </td>
+            <td>Promoted Rook
+            </td>
+            <td>龍王
+            </td>
+            <td>+R
+            </td>
+            <td>龍
+            </td>
+          </tr>
+          <tr>
+            <td>成銀
+            </td>
+            <td>Promoted Silver General
+            </td>
+            <td>成銀
+            </td>
+            <td>+S
+            </td>
+            <td>全
+            </td>
+          </tr>
+          <tr>
+            <td>飛車
+            </td>
+            <td>Rook
+            </td>
+            <td>飛車
+            </td>
+            <td>R
+            </td>
+            <td>飛
+            </td>
+          </tr>
+          <tr>
+            <td>銀將
+            </td>
+            <td>Silver General
+            </td>
+            <td>銀将
+            </td>
+            <td>S
+            </td>
+            <td>銀
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        <strong>Note</strong>&nbsp;:
+        Au ōgi, la distinction unique par rapport au Shōgi traditionnel réside dans la pièce singulière connue sous le nom de <q>Princesse</q>.
+        Cette pièce incarne le cœur stratégique du jeu, combinant les mouvements d'un Cavalier d'échecs et d'un Fou.
+        Comme le chevalier, la Princesse peut sauter par-dessus les autres pièces, se déplaçant en forme de L, deux cases dans une direction, puis une case perpendiculairement.
+        Simultanément, elle adopte la capacité du Fou à se déplacer en diagonale à travers n'importe quel nombre de cases inoccupées.
+        Cette double capacité confère à la Princesse une polyvalence inégalée sur le plateau 8x8, ce qui en fait un élément redoutable et central du jeu.
+      </p>
+
+      <h2>Règles</h2>
+
+      <p>Principales différences par rapport au shōgi traditionnel&nbsp;:</p>
+
+      <ol>
+        <li><strong>Taille du Plateau</strong> : ōgi se joue sur un plateau de 8x8, contrairement au plateau standard de 9x9 utilisé dans le shōgi.</li>
+        <li><strong>La Pièce Princesse</strong> : Une addition unique dans ōgi est la pièce Princesse, qui combine les mouvements d'un Fou et d'un Cavalier aux échecs, la rendant ainsi une pièce puissante et polyvalente.</li>
+        <li><strong>Promotion Obligatoire</strong> :
+          <ul>
+            <li>Au ōgi, la promotion des pièces est obligatoire. Cette règle s'applique à toutes les pièces, y compris la Princesse.</li>
+            <li>Lors de sa promotion, la Princesse acquiert les capacités de mouvement du Roi, en plus de ses capacités existantes.</li>
+          </ul>
+        </li>
+        <li><strong>Échec et Mat avec le Pion ōgi</strong> : ōgi permet l'échec et mat en posant un Pion ōgi, une caractéristique unique non présente dans le shōgi traditionnel.</li>
+      </ol>
+
+      <p>
+        <strong>Note</strong>&nbsp;:
+        Toutes les autres règles et mécanismes de jeu dans ōgi sont hérités du shōgi traditionnel.
+        Cela inclut le mouvement général des pièces, les méthodes de capture et l'objectif de base du jeu.
+        En conservant ces aspects fondamentaux du shōgi et en intégrant des éléments uniques, ōgi offre une expérience stratégique à la fois familière et rafraîchissante pour les joueurs.
+      </p>
+
+      <h2>Notes</h2>
+
+      <p>
+        Tandis que les échecs occidentaux vénèrent la dryade thracienne mythologique Caïssa comme leur divinité, les origines d'ōgi sont enveloppées dans les murmures d'une légende urbaine.
+        On murmure que le jeu est lié à <a href="../a-propos/" title="L'Énigme du Crépuscule">un yokai nommé Komayō</a>, ajoutant des couches de mystère et de folklore.
+        Cependant, il reste incertain si <a href="../" title="Légende urbaine">cette histoire</a> est simplement un fruit de l'imagination ou si elle détient une vérité plus profonde, jetant un voile d'enchantement et d'intrigue sur ōgi, rappelant la riche tapisserie de la mythologie japonaise.
+      </p>
+    </article>
+
+    <nav>
+      <a href="../recits/rencontre-au-bar-de-la-regence/">
+        <picture>
+          <source srcset="../recits/rencontre-au-bar-de-la-regence/favicon-episode-1-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../recits/rencontre-au-bar-de-la-regence/favicon-episode-1-dark.svg"
+            alt="Episode 1"
+            title="Rencontre au Bar de la Régence"
+            height="51.709"
+            width="45.747">
+        </picture>
+      </a>
+
+      <a href="../recits/l-orgueil-ou-l-ame-du-champion/">
+        <picture>
+          <source srcset="../recits/l-orgueil-ou-l-ame-du-champion/favicon-episode-2-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../recits/l-orgueil-ou-l-ame-du-champion/favicon-episode-2-dark.svg"
+            alt="Episode 2"
+            title="L'orgueil ou l'âme du Champion"
+            height="51.709"
+            width="45.747">
+        </picture>
+      </a>
+
+      <a href="../recits/l-amour-sous-les-cerisiers/">
+        <picture>
+          <source srcset="../recits/l-amour-sous-les-cerisiers/favicon-episode-3-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../recits/l-amour-sous-les-cerisiers/favicon-episode-3-dark.svg"
+            alt="Episode 3"
+            title="L'Amour sous les cerisiers"
+            height="51.709"
+            width="45.747">
+        </picture>
+      </a>
+
+      <a href="../recits/le-souffle-du-renard/">
+        <picture>
+          <source srcset="../recits/le-souffle-du-renard/favicon-episode-4-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../recits/le-souffle-du-renard/favicon-episode-4-dark.svg"
+            alt="Episode 4"
+            title="Le Souffle du Renard"
+            height="51.709"
+            width="45.747">
+        </picture>
+      </a>
+
+      <a href="../recits/la-genese-de-l-enchanteresse/">
+        <picture>
+          <source srcset="../recits/la-genese-de-l-enchanteresse/favicon-episode-5-light.svg" media="(prefers-color-scheme: light)">
+          <img
+            src="../recits/la-genese-de-l-enchanteresse/favicon-episode-5-dark.svg"
+            alt="Episode 5"
+            title="La Genèse de l'Enchanteresse"
+            height="51.709"
+            width="45.747">
+        </picture>
+      </a>
+    </nav>
+  </body>
+</html>
