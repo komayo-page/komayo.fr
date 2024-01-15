@@ -1,0 +1,36 @@
+/*
+ * Props
+ */
+
+@media (orientation: landscape) {
+  :where(html) {
+    --content-size: 100vh;
+  }
+}
+
+@media (orientation: portrait) {
+  :where(html) {
+    --content-size: 100vw;
+  }
+}
+
+:where(html) {
+  --game-squares-count:       8;
+  --game-square-size:         calc(var(--content-size)/(var(--game-squares-count) + 2));
+  --game-board-size:          calc(var(--game-square-size)*var(--game-squares-count));
+  --game-piece-size:          calc(var(--game-square-size)/1.2);
+  --game-captured-piece-size: calc(var(--game-piece-size)/2);
+  --game-emoji-size:          calc(var(--game-square-size)/1.6);
+
+  /* Font */
+
+  --font-size-fluid-4: calc(var(--game-square-size)*2);
+  --font-size-fluid-3: var(--game-emoji-size);
+  --font-size-fluid-2: calc(var(--font-size-fluid-3)/1.5);
+  --font-size-fluid-1: calc(var(--game-emoji-size) - var(--font-size-fluid-2)); /* calc(var(--font-size-fluid-2)/1.5); */
+  --font-size-fluid-0: calc(var(--font-size-fluid-1)/1.5);
+
+  --font-sans: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+  --font-serif: ui-serif,serif;
+  --font-mono: Dank Mono,Operator Mono,Inconsolata,Fira Mono,ui-monospace,SF Mono,Monaco,Droid Sans Mono,Source Code Pro,monospace;
+}
