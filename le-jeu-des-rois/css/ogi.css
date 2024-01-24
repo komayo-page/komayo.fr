@@ -2,96 +2,29 @@
  * Game
  */
 
-section.board {
-  display: grid;
-  grid-column-gap: 0;
-  grid-template-columns: var(--game-square-size) var(--game-board-size) var(--game-square-size);
-  padding: 0;
-  margin: 0;
-}
-
-section.board > table.squares {
+table.squares {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 100%;
-  height: 100%;
+  width: var(--game-board-size);
+  height: var(--game-board-size);
   empty-cells: show;
-}
-
-section.board > table.squares {
   background-image: url("../img/variant/ogi/south/board.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-section.board > table.squares tr.rank {
+table.squares tr.rank {
   height: var(--game-square-size);
 }
 
-section.board img.piece {
+table.squares img.piece[data-variant="ogi"][data-side="north"] {
+  transform: rotate(-180deg);
+}
+
+table.squares img.piece {
   display: block;
   height: var(--game-piece-size);
   margin-left: auto;
   margin-right: auto;
-}
-
-section.board ul.captures {
-  display: flex;
-  flex-wrap: nowrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: calc(var(--game-piece-size)/10);
-}
-
-section.board ul.captures[data-by-side="north"] {
-  flex-direction: column;
-}
-
-section.board ul.captures[data-by-side="south"] {
-  flex-direction: column-reverse;
-}
-
-section.board ul.captures li.capture {
-  position: relative;
-  z-index: 1;
-}
-
-section.board ul.captures li.capture:not([data-count="1"])::after {
-  content: attr(data-count);
-  position: absolute;
-  top: 0;
-  right: var(--font-size-fluid-0);
-  min-width: var(--font-size-fluid-1);
-  min-height: var(--font-size-fluid-1);
-  padding: 0;
-  border-radius: 50%;
-  background-color: var(--favorite-color-background-focus);
-  color: var(--favorite-color-link-hover);
-  font-size: var(--font-size-fluid-0);
-  line-height: var(--font-size-fluid-1);
-  text-align: center;
-  box-sizing: border-box;
-}
-
-section.board ul.captures li.capture img.piece {
-  height: var(--game-captured-piece-size);
-}
-
-ul.captures[data-by-side="north"] li.capture img.piece:not([data-side="north"]),
-ul.captures[data-by-side="south"] li.capture img.piece:not([data-side="south"]) {
-  /* cursor: not-allowed; */
-  opacity: .5;
-}
-
-section.board table.squares img.piece[data-variant="ogi"][data-side="north"] {
-  transform: rotate(-180deg);
-}
-
-section.board .dragging {
-  opacity: 0.5;
-  background-color: transparent;
-}
-
-section.board .dragover {
-  background-color: #eee;
-  opacity: .4;
 }
