@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr" itemscope itemtype="http://schema.org/Article">
+<html lang="fr" dir="ltr" itemscope itemtype="http://schema.org/Game">
   <head>
     <title>Ōgi - Le Jeu des Rois</title>
 
@@ -10,12 +10,27 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Cyril Veltin">
     <meta property="og:title" content="Ōgi - Le Jeu des Rois">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://fr.komayo.page/le-jeu-des-rois/">
+
     <meta property="og:image" content="https://fr.komayo.page/le-jeu-des-rois/img/position-initiale-d-une-partie-de-ogi-large.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="828">
+    <meta property="og:image:height" content="828">
+
+    <meta property="og:image" content="https://fr.komayo.page/le-jeu-des-rois/img/position-initiale-d-une-partie-de-ogi-small.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <meta property="og:image" content="https://fr.komayo.page/le-jeu-des-rois/img/position-initiale-d-une-partie-de-ogi-fallback.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="828">
+    <meta property="og:image:height" content="828">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ōgi - Le Jeu des Rois">
-    <meta name="twitter:image" content="https://fr.komayo.page/le-jeu-des-rois/img/position-initiale-d-une-partie-de-ogi-large.webp">
+    <meta name="twitter:image" content="https://fr.komayo.page/le-jeu-des-rois/img/position-initiale-d-une-partie-de-ogi-fallback.jpg">
 
     <link rel="canonical" href="https://fr.komayo.page/le-jeu-des-rois/">
     <link rel="icon" type="image/svg+xml" sizes="any" href="../favicon.svg">
@@ -49,8 +64,8 @@
     <link rel="stylesheet" href="../css/all.css" media="all">
     <link rel="stylesheet" href="../css/print.css" media="print">
     <link rel="stylesheet" href="../css/screen.css" media="screen">
-    <link rel="stylesheet" href="css/props.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="css/ogi.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/props.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/ogi.css" type="text/css" media="all">
 
     <script type="application/ld+json">
       {
@@ -63,12 +78,12 @@
         "url": "https://fr.komayo.page/le-jeu-des-rois/",
         "publisher": {
           "@type": "Organization",
-          "name": "Komayo Games",
-          "url": "https://fr.komayo.page"
+          "name": "Sashité",
+          "url": "https://sashite.com/"
         },
         "audience": {
           "@type": "Audience",
-          "audienceType": "Amateurs de jeux de société"
+          "audienceType": "Amateurs de jeux de shōgi"
         },
         "author": {
           "@type": "Person",
@@ -111,36 +126,36 @@
       <table class="squares">
         <tbody>
           <tr class="rank">
-            <td class="square" data-coordinate="a8"><img class="piece" draggable="true" data-code="o:l" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/lance.svg"></td>
-            <td class="square" data-coordinate="b8"><img class="piece" draggable="true" data-code="o:n" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/knight.svg"></td>
-            <td class="square" data-coordinate="c8"><img class="piece" draggable="true" data-code="o:s" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/silver-general.svg"></td>
-            <td class="square" data-coordinate="d8"><img class="piece" draggable="true" data-code="o:i" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/princess.svg"></td>
-            <td class="square" data-coordinate="e8"><img class="piece" draggable="true" data-code="o:k^" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/king.svg"></td>
-            <td class="square" data-coordinate="f8"><img class="piece" draggable="true" data-code="o:s" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/silver-general.svg"></td>
-            <td class="square" data-coordinate="g8"><img class="piece" draggable="true" data-code="o:n" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/knight.svg"></td>
-            <td class="square" data-coordinate="h8"><img class="piece" draggable="true" data-code="o:l" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/lance.svg"></td>
+            <td class="square" data-coordinate="a8"><img class="piece" draggable="true" data-code="o:l" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/lance.svg" alt="Lance"></td>
+            <td class="square" data-coordinate="b8"><img class="piece" draggable="true" data-code="o:n" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/knight.svg" alt="Cavalier"></td>
+            <td class="square" data-coordinate="c8"><img class="piece" draggable="true" data-code="o:s" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/silver-general.svg" alt="Général d'argent"></td>
+            <td class="square" data-coordinate="d8"><img class="piece" draggable="true" data-code="o:i" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/princess.svg" alt="Princesse"></td>
+            <td class="square" data-coordinate="e8"><img class="piece" draggable="true" data-code="o:k^" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/king.svg" alt="Roi"></td>
+            <td class="square" data-coordinate="f8"><img class="piece" draggable="true" data-code="o:s" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/silver-general.svg" alt="Général d'argent"></td>
+            <td class="square" data-coordinate="g8"><img class="piece" draggable="true" data-code="o:n" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/knight.svg" alt="Cavalier"></td>
+            <td class="square" data-coordinate="h8"><img class="piece" draggable="true" data-code="o:l" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/lance.svg" alt="Lance"></td>
           </tr>
 
           <tr class="rank">
             <td class="square" data-coordinate="a7"></td>
-            <td class="square" data-coordinate="b7"><img class="piece" draggable="true" data-code="o:r" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/rook.svg"></td>
+            <td class="square" data-coordinate="b7"><img class="piece" draggable="true" data-code="o:r" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/rook.svg" alt="Tour"></td>
             <td class="square" data-coordinate="c7"></td>
             <td class="square" data-coordinate="d7"></td>
             <td class="square" data-coordinate="e7"></td>
             <td class="square" data-coordinate="f7"></td>
-            <td class="square" data-coordinate="g7"><img class="piece" draggable="true" data-code="o:b" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/bishop.svg"></td>
+            <td class="square" data-coordinate="g7"><img class="piece" draggable="true" data-code="o:b" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/bishop.svg" alt="Fou"></td>
             <td class="square" data-coordinate="h7"></td>
           </tr>
 
           <tr class="rank">
-            <td class="square" data-coordinate="a6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg"></td>
-            <td class="square" data-coordinate="b6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg"></td>
-            <td class="square" data-coordinate="c6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg"></td>
-            <td class="square" data-coordinate="d6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg"></td>
-            <td class="square" data-coordinate="e6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg"></td>
-            <td class="square" data-coordinate="f6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg"></td>
-            <td class="square" data-coordinate="g6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg"></td>
-            <td class="square" data-coordinate="h6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg"></td>
+            <td class="square" data-coordinate="a6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="b6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="c6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="d6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="e6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="f6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="g6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="h6"><img class="piece" draggable="true" data-code="o:p" data-variant="ogi" data-side="north" src="img/variant/ogi/north/western/pawn.svg" alt="Pion"></td>
           </tr>
 
           <tr class="rank">
@@ -166,36 +181,36 @@
           </tr>
 
           <tr class="rank">
-            <td class="square" data-coordinate="a3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg"></td>
-            <td class="square" data-coordinate="b3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg"></td>
-            <td class="square" data-coordinate="c3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg"></td>
-            <td class="square" data-coordinate="d3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg"></td>
-            <td class="square" data-coordinate="e3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg"></td>
-            <td class="square" data-coordinate="f3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg"></td>
-            <td class="square" data-coordinate="g3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg"></td>
-            <td class="square" data-coordinate="h3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg"></td>
+            <td class="square" data-coordinate="a3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="b3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="c3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="d3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="e3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="f3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="g3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg" alt="Pion"></td>
+            <td class="square" data-coordinate="h3"><img class="piece" draggable="true" data-code="O:P" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/pawn.svg" alt="Pion"></td>
           </tr>
 
           <tr class="rank">
             <td class="square" data-coordinate="a2"></td>
-            <td class="square" data-coordinate="b2"><img class="piece" draggable="true" data-code="O:B" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/bishop.svg"></td>
+            <td class="square" data-coordinate="b2"><img class="piece" draggable="true" data-code="O:B" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/bishop.svg" alt="Fou"></td>
             <td class="square" data-coordinate="c2"></td>
             <td class="square" data-coordinate="d2"></td>
             <td class="square" data-coordinate="e2"></td>
             <td class="square" data-coordinate="f2"></td>
-            <td class="square" data-coordinate="g2"><img class="piece" draggable="true" data-code="O:R" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/rook.svg"></td>
+            <td class="square" data-coordinate="g2"><img class="piece" draggable="true" data-code="O:R" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/rook.svg" alt="Tour"></td>
             <td class="square" data-coordinate="h2"></td>
           </tr>
 
           <tr class="rank">
-            <td class="square" data-coordinate="a1"><img class="piece" draggable="true" data-code="O:L" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/lance.svg"></td>
-            <td class="square" data-coordinate="b1"><img class="piece" draggable="true" data-code="O:N" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/knight.svg"></td>
-            <td class="square" data-coordinate="c1"><img class="piece" draggable="true" data-code="O:S" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/silver-general.svg"></td>
-            <td class="square" data-coordinate="d1"><img class="piece" draggable="true" data-code="O:I" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/princess.svg"></td>
-            <td class="square" data-coordinate="e1"><img class="piece" draggable="true" data-code="O:K^" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/king.svg"></td>
-            <td class="square" data-coordinate="f1"><img class="piece" draggable="true" data-code="O:S" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/silver-general.svg"></td>
-            <td class="square" data-coordinate="g1"><img class="piece" draggable="true" data-code="O:N" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/knight.svg"></td>
-            <td class="square" data-coordinate="h1"><img class="piece" draggable="true" data-code="O:L" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/lance.svg"></td>
+            <td class="square" data-coordinate="a1"><img class="piece" draggable="true" data-code="O:L" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/lance.svg" alt="Lance"></td>
+            <td class="square" data-coordinate="b1"><img class="piece" draggable="true" data-code="O:N" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/knight.svg" alt="Cavalier"></td>
+            <td class="square" data-coordinate="c1"><img class="piece" draggable="true" data-code="O:S" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/silver-general.svg" alt="Général d'argent"></td>
+            <td class="square" data-coordinate="d1"><img class="piece" draggable="true" data-code="O:I" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/princess.svg" alt="Princesse"></td>
+            <td class="square" data-coordinate="e1"><img class="piece" draggable="true" data-code="O:K^" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/king.svg" alt="Roi"></td>
+            <td class="square" data-coordinate="f1"><img class="piece" draggable="true" data-code="O:S" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/silver-general.svg" alt="Général d'argent"></td>
+            <td class="square" data-coordinate="g1"><img class="piece" draggable="true" data-code="O:N" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/knight.svg" alt="Cavalier"></td>
+            <td class="square" data-coordinate="h1"><img class="piece" draggable="true" data-code="O:L" data-variant="ogi" data-side="south" src="img/variant/ogi/south/western/lance.svg" alt="Lance"></td>
           </tr>
         </tbody>
       </table>
@@ -489,8 +504,8 @@
             src="../recits/rencontre-au-bar-de-la-regence/favicon-episode-1-dark.svg"
             alt="Episode 1"
             title="Rencontre au Bar de la Régence"
-            height="51.709"
-            width="45.747">
+            height="51"
+            width="45">
         </picture>
       </a>
 
@@ -501,8 +516,8 @@
             src="../recits/l-orgueil-ou-l-ame-du-champion/favicon-episode-2-dark.svg"
             alt="Episode 2"
             title="L'orgueil ou l'âme du Champion"
-            height="51.709"
-            width="45.747">
+            height="51"
+            width="45">
         </picture>
       </a>
 
@@ -513,8 +528,8 @@
             src="../recits/l-amour-sous-les-cerisiers/favicon-episode-3-dark.svg"
             alt="Episode 3"
             title="L'Amour sous les cerisiers"
-            height="51.709"
-            width="45.747">
+            height="51"
+            width="45">
         </picture>
       </a>
 
@@ -525,8 +540,8 @@
             src="../recits/le-souffle-du-renard/favicon-episode-4-dark.svg"
             alt="Episode 4"
             title="Le Souffle du Renard"
-            height="51.709"
-            width="45.747">
+            height="51"
+            width="45">
         </picture>
       </a>
 
@@ -537,8 +552,8 @@
             src="../recits/la-genese-de-l-enchanteresse/favicon-episode-5-dark.svg"
             alt="Episode 5"
             title="La Genèse de l'Enchanteresse"
-            height="51.709"
-            width="45.747">
+            height="51"
+            width="45">
         </picture>
       </a>
     </nav>
