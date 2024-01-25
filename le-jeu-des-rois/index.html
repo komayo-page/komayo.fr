@@ -5,8 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="La variante romantique du Shōgi sur un échiquier 8x8.">
-    <meta name="keywords" content="histoire de fantômes, Komayō, obake, ōgi, shōgi, yōkai, yūrei">
+    <meta name="description" content="Découvrez Ōgi - La variante romantique du Shōgi sur un échiquier 8x8.">
+    <meta name="keywords" content="Ōgi, Jeu des Rois, jeux de stratégie, jeux de société, 8x8, ōgiban">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Cyril Veltin">
     <meta property="og:title" content="Ōgi - Le Jeu des Rois">
@@ -51,6 +51,36 @@
     <link rel="stylesheet" href="../css/screen.css" media="screen">
     <link rel="stylesheet" href="css/props.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/ogi.css" type="text/css" media="all" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": "Ōgi - Le Jeu des Rois",
+        "description": "Ōgi - Le Jeu des Rois est un jeu de société stratégique captivant qui offre une expérience de réflexion et de tactique. Découvrez les règles uniques et lancez-vous dans des parties palpitantes.",
+        "keywords": "Ōgi, Jeu des Rois, jeux de stratégie, jeux de société, 8x8, ōgiban",
+        "image": "https://fr.komayo.page/le-jeu-des-rois/img/position-initiale-d-une-partie-de-ogi-large.webp",
+        "url": "https://fr.komayo.page/le-jeu-des-rois/",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Komayo Games",
+          "url": "https://fr.komayo.page"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Amateurs de jeux de société"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Cyril Veltin"
+        },
+        "datePublished": "2023-01-01",
+        "gameLocation": {
+          "@type": "Place",
+          "name": "Usage domestique"
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -512,5 +542,15 @@
         </picture>
       </a>
     </nav>
+
+    <script type="module" src="../js/ogi/drag-and-drop.js"></script>
+
+    <script type="module">
+      import { initializeOgiDragAndDrop } from '../js/ogi/drag-and-drop.js';
+
+      document.addEventListener('DOMContentLoaded', (event) => {
+        initializeOgiDragAndDrop();
+      });
+    </script>
   </body>
 </html>
