@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+:root {
+  --background-color: white;
+  --color: black;
+  --link-color: #6d071a;
+  --quote-color: #6d071a;
+  --article-title-text-color: #000;
+  --article-title-shadow-color: #ccc;
+}
+
 @media (orientation: landscape) {
   :root {
     --content-size: 100vh;
@@ -37,9 +46,32 @@ body {
   padding: 0;
 }
 
+body > header > picture > img {
+  height: var(--font-size-4);
+}
+
+body > nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body > nav img {
+  vertical-align: middle;
+  height: 1em;
+  width: auto;
+}
+
+body > nav a {
+  display: inline-flex;
+  align-items: center;
+}
+
 h1 {
   font-size: var(--font-size-4);
-  margin: 0 0 var(--font-size-2) 0;
+  margin: var(--font-size-2) 0;
 }
 
 h2 {
@@ -57,10 +89,6 @@ a {
 
 q {
   color: var(--quote-color);
-}
-
-body > article {
-  text-shadow: 1px 1px 1px var(--shadow-color);
 }
 
 body > article img {
@@ -81,63 +109,6 @@ body > article h2 {
   color: var(--article-title-text-color);
 }
 
-body > article h1 {
-  text-shadow: 3px 2px 1px var(--article-title-shadow-color);
-}
-
-body > article h2 {
-  text-shadow: 2px 2px 2px var(--article-title-shadow-color);
-}
-
-body > article > section p:first-of-type::first-letter {
-  initial-letter: 2;
-  padding-right: .3rem;
-  font-family: "IBM Plex Mono", monospace;
-}
-
-
-
-body > nav {
-  position: fixed;
-  bottom: 0;
-  right: var(--margin-size);
-  display: flex;
-  gap: var(--margin-size);
-  z-index: 1000;
-}
-
-body > nav picture > img {
-  display: block;
-  max-width: 100%;
-  height: var(--nav-img-size);
-}
-
-body > nav > a > picture > img {
-  opacity: .2;
-}
-
-body > nav > a > picture > img:hover {
-  opacity: 1;
-}
-
-
-
-body > aside {
-  margin: 1em 0;
-  padding: 1em 0;
-  border-top: thin solid var(--article-title-shadow-color);
-  border-bottom: thin solid var(--article-title-shadow-color);
-}
-
-body > aside > p {
-  margin: 0;
-  padding: 0;
-}
-
 body > footer {
-  margin-bottom: var(--nav-img-size);
-}
-
-body > footer > p {
   font-size: var(--font-size-0);
 }

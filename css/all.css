@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 :root {
-  --font-body: Arial, Helvetica, sans-serif;
-  --font-dialogue: Georgia, "Times New Roman", serif;
-  --font-title: "Garamond", "Palatino", serif;
-  --font-quote: "Book Antiqua", "Bookman Old Style", serif;
+  --font-body: "Baskervville", serif;
+  --font-dialogue: "Lora", serif;
+  --font-quote: "Libre Baskerville", serif;
+  --font-title: "Playfair Display", serif;
 }
 
 body {
