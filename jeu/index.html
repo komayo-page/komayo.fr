@@ -20,13 +20,13 @@
     <meta property="og:title" content="Le Jeu de la Princesse">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fr.komayo.page/jeu/">
-    <meta property="og:image" content="https://fr.komayo.page/jeu/img/2048x2048/ogi.webp">
+    <meta property="og:image" content="https://fr.komayo.page/jeu/img/ogi_ct9xqo_c_scale,w_1024.webp">
     <meta property="og:article:author" content="Cyril Veltin">
     <meta property="og:article:published_time" content="2023-06-26">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Le Jeu de la Princesse">
-    <meta name="twitter:image" content="https://fr.komayo.page/jeu/img/2048x2048/ogi.webp">
+    <meta name="twitter:image" content="https://fr.komayo.page/jeu/img/ogi_ct9xqo_c_scale,w_1024.webp">
 
     <link rel="alternate" hreflang="en" href="https://en.komayo.page/game/">
     <link rel="alternate" hreflang="fr" href="https://fr.komayo.page/jeu/">
@@ -36,20 +36,87 @@
 
     <link rel="canonical" href="https://fr.komayo.page/jeu/">
 
-    <link rel="icon" type="image/png" href="/img/icon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/img/icon/favicon.svg" />
-    <link rel="shortcut icon" href="/img/icon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Komayō" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --side-padding: calc(1vw + 8px);
+        --primary-color: #6d071a;
+        --border-color: #ccc;
+      }
 
-    <link rel="stylesheet" href="../css/all.css" media="all">
-    <link rel="stylesheet" href="../css/print.css" media="print">
-    <link rel="stylesheet" href="../css/screen.css" media="screen">
+      /* Layout */
+      body {
+        font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", "Palatino Linotype", Georgia, serif;
+        line-height: 1.7;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: var(--side-padding) 0;
+      }
+
+      /* Lists */
+      dl, ul, ol {
+        margin-left: 2em;
+      }
+
+      /* Padding for all body grandchildren except article pictures */
+      body > * > *:not(article > picture) {
+        padding-inline: var(--side-padding);
+      }
+
+      body > * > picture {
+        text-align: center;
+      }
+
+      body > * > picture img {
+        margin: auto;
+        display: block;
+      }
+
+      body > nav img {
+        display: inline;
+        vertical-align: middle;
+        height: 1em;
+        width: auto;
+      }
+
+      /* Typography */
+      h1, h2, h3 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.3;
+        margin-bottom: 0.8em;
+      }
+
+      /* Article styles */
+      article blockquote {
+        font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+        border-left: 0.5em solid var(--border-color);
+      }
+
+      article q {
+        font-family: Georgia, "Cambria", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+        color: var(--primary-color);
+      }
+
+      article p {
+        text-align: justify;
+      }
+
+      /* Links */
+      a {
+        color: var(--primary-color);
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 2em;
+      }
+    </style>
 
     <script type="application/ld+json">
       {
@@ -58,7 +125,7 @@
         "name": "Le Jeu de la Princesse",
         "description": "Découvrez Ogi - La variante mythique du Shōgi sur un échiquier 8x8.",
         "keywords": "Ōgi, Jeu de la Princesse, Échecs de Komayō, 8x8, ōgiban, Variante Mythique du Shogi, Jeu des Rois",
-        "image": "https://fr.komayo.page/jeu/img/2048x2048/ogi.webp",
+        "image": "https://fr.komayo.page/jeu/img/ogi_ct9xqo_c_scale,w_1024.webp",
         "url": "https://fr.komayo.page/jeu/",
         "publisher": {
           "@type": "Organization",
@@ -76,39 +143,33 @@
 
   <body>
     <nav>
-      <a href="/"><img src="/img/komayo.svg" alt="Komayō" title="Komayō" height="22" width="92"></a> &raquo; Jeu
+      <p>
+        <a href="/"><img src="/logo/komayo.svg" alt="Komayō" title="Komayō" height="22" width="92"></a> &raquo;
+        Jeu
+      </p>
     </nav>
 
     <article>
       <h1>Le Jeu de la Princesse</h1>
 
-      <blockquote>
-        <p>
-          <strong>Ōgi</strong> (王棋, romaji&nbsp;: ōgi) est une variante du shōgi proposant des parties plus courtes et plus dynamiques.
-          Le terme <cite>ōgi</cite> signifie littéralement <q>le jeu du roi</q>, mais il est également connu sous le nom de <cite>Hime Asobi</cite> (姫遊び, "Le Jeu de la Princesse"), en référence à la protagoniste du récit <cite>La Genèse de l'Enchanteresse</cite>.
-          Cette double appellation reflète la particularité du jeu où la princesse, aux côtés du roi, tient un rôle central dans la stratégie.
-        </p>
-      </blockquote>
-
-      <picture>
-        <img  src="img/2048x2048/ogi.webp"
-              alt="Illustration nocturne d'une scène de jeu d'ōgi. Au premier plan, deux hommes en kimono sombre sont assis face à face devant un plateau de jeu. À l'arrière-plan, une femme mystérieuse en kimono bleu se tient debout, auréolée par la lumière de la lune, créant une atmosphère surnaturelle. La scène est encadrée par des bambous et une architecture traditionnelle japonaise, le tout dans des tons bleu nuit et blanc lumineux caractéristiques de l'ère Kamakura."
-              width="2048" height="2048"
-              loading="eager">
-      </picture>
+      <p>
+        Ōgi (王棋, romaji&nbsp;: ōgi) est une variante du shōgi proposant des parties plus courtes et plus dynamiques.
+        Le terme <cite>ōgi</cite> signifie littéralement <q>le jeu du roi</q>, mais il est également connu sous le nom de <cite>Hime Asobi</cite> (姫遊び, "Le Jeu de la Princesse"), en référence à la protagoniste du récit <cite>La Genèse de l'Enchanteresse</cite>.
+        Cette double appellation reflète la particularité du jeu où la princesse, aux côtés du roi, tient un rôle central dans la stratégie.
+      </p>
 
       <h2>Différences avec le Shōgi traditionnel</h2>
 
       <p>Ōgi se distingue exclusivement du shōgi traditionnel dans les aspects clés suivants, tous les autres aspects du jeu restant cohérents&nbsp;:</p>
 
       <dl>
-        <dt><strong>Taille du plateau</strong></dt>
+        <dt>Taille du plateau</dt>
         <dd>Le jeu se joue sur une grille de 8x8, totalisant 64 cases, contrairement au plateau de 9x9 du shōgi.</dd>
 
-        <dt><strong>Règle de la pose</strong></dt>
+        <dt>Règle de la pose</dt>
         <dd>Ōgi permet le mat par la pose d'un pion, une manœuvre qui n'est pas autorisée dans le shōgi traditionnel.</dd>
 
-        <dt><strong>Pièces</strong></dt>
+        <dt>Pièces</dt>
         <dd>
           Les modifications dans la composition des pièces pour ōgi sont les suivantes&nbsp;:
           <ul>
@@ -118,24 +179,52 @@
           </ul>
         </dd>
 
-        <dt><strong>Promotion</strong></dt>
+        <dt>Promotion</dt>
         <dd>
           Dans ōgi, lorsque la promotion d'une pièce est optionnelle dans le shōgi traditionnel, cette promotion devient obligatoire.
           Cette règle assure que lorsqu'une pièce se déplace dans, hors de, ou à l'intérieur de la zone de promotion sous des conditions qui permettraient une promotion optionnelle dans le Shōgi, elle doit être promue dans ōgi.
         </dd>
       </dl>
 
+      <picture>
+        <img
+          width="1024"
+          height="1024"
+          style="max-width: 100%; height: auto;"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          srcset="
+            img/ogi_ct9xqo_c_scale,w_200.webp 200w,
+            img/ogi_ct9xqo_c_scale,w_346.webp 346w,
+            img/ogi_ct9xqo_c_scale,w_459.webp 459w,
+            img/ogi_ct9xqo_c_scale,w_529.webp 529w,
+            img/ogi_ct9xqo_c_scale,w_599.webp 599w,
+            img/ogi_ct9xqo_c_scale,w_670.webp 670w,
+            img/ogi_ct9xqo_c_scale,w_754.webp 754w,
+            img/ogi_ct9xqo_c_scale,w_834.webp 834w,
+            img/ogi_ct9xqo_c_scale,w_907.webp 907w,
+            img/ogi_ct9xqo_c_scale,w_981.webp 981w,
+            img/ogi_ct9xqo_c_scale,w_1022.webp 1022w,
+            img/ogi_ct9xqo_c_scale,w_1024.webp 1024w"
+          src="img/ogi_ct9xqo_c_scale,w_1024.webp"
+          alt="Illustration nocturne d'une scène de jeu d'ōgi. Au premier plan, deux hommes en kimono sombre sont assis face à face devant un plateau de jeu. À l'arrière-plan, une femme mystérieuse en kimono bleu se tient debout, auréolée par la lumière de la lune, créant une atmosphère surnaturelle. La scène est encadrée par des bambous et une architecture traditionnelle japonaise, le tout dans des tons bleu nuit et blanc lumineux caractéristiques de l'ère Kamakura."
+        >
+      </picture>
+    </article>
+
+    <aside>
       <h2>Liens externes</h2>
 
       <ul>
         <li><a href="https://www.chessvariants.com/rules/ogi" rel="external" lang="en">Ōgi rules</a></li>
         <li><a href="https://fr.ogi.page/" rel="external">Le jeu du Roi</a></li>
       </ul>
-    </article>
+    </aside>
 
     <footer>
-      &copy; 2023 Cyril Veltin.
-      Tous droits réservés.
+      <p>
+        &copy; 2023 Cyril Veltin.
+        Tous droits réservés.
+      </p>
     </footer>
   </body>
 </html>
