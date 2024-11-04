@@ -36,23 +36,61 @@
 
     <link rel="canonical" href="https://fr.komayo.page/jeu/">
 
-    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Komayō" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Komayō">
+    <link rel="manifest" href="/site.webmanifest">
 
     <style>
-      :root {
+      @media (orientation: landscape) {
+        :where(html) {
+          --content-size: 100vh;
+        }
+      }
+
+      @media (orientation: portrait) {
+        :where(html) {
+          --content-size: 100vw;
+        }
+      }
+
+      :where(html) {
+        --font-family-body:     Baskerville, "Baskerville Old Face", "Hoefler Text", "Palatino Linotype", Georgia, serif;
+        --font-family-dialogue: Georgia, "Cambria", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+        --font-family-title:    Georgia, "Times New Roman", Times, serif;
+        --font-family-quote:    Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+        --font-size-1: calc(var(--content-size)/32);
+        --font-size-2: calc(var(--content-size)/26);
+        --font-size-3: calc(var(--content-size)/20);
+        --font-size-4: calc(var(--content-size)/14);
+
         --side-padding: calc(1vw + 8px);
         --primary-color: #6d071a;
-        --border-color: #ccc;
+        --border-color: #000;
+      }
+
+      h1 {
+        font-size: var(--font-size-4);
+      }
+
+      h2 {
+        font-size: var(--font-size-3);
+      }
+
+      h3 {
+        font-size: var(--font-size-2);
+      }
+
+      :root {
+        font-size: var(--font-size-1);
       }
 
       /* Layout */
       body {
-        font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", "Palatino Linotype", Georgia, serif;
+        font-family: var(--font-family-body);
         line-height: 1.7;
         max-width: 1024px;
         margin: 0 auto;
@@ -60,8 +98,9 @@
       }
 
       /* Lists */
-      dl, ul, ol {
+      dl, ul, ol, blockquote {
         margin-left: 2em;
+        padding-left: 1em;
       }
 
       /* Padding for all body grandchildren except article pictures */
@@ -87,19 +126,19 @@
 
       /* Typography */
       h1, h2, h3 {
-        font-family: Georgia, "Times New Roman", Times, serif;
+        font-family: var(--font-family-title);
         line-height: 1.3;
         margin-bottom: 0.8em;
       }
 
       /* Article styles */
       article blockquote {
-        font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-        border-left: 0.5em solid var(--border-color);
+        font-family: var(--font-family-quote);
+        border-left: thin solid var(--border-color);
       }
 
       article q {
-        font-family: Georgia, "Cambria", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+        font-family: var(--font-family-dialogue);
         color: var(--primary-color);
       }
 
@@ -115,6 +154,24 @@
       /* Footer */
       footer {
         margin-top: 2em;
+      }
+
+      .breadcrumb {
+        list-style: none;
+        margin: 0;
+      }
+
+      .breadcrumb li {
+        display: inline;
+      }
+
+      .breadcrumb a:first-child {
+        text-decoration: none;
+      }
+
+      .breadcrumb li:not(:last-child)::after {
+        content: " \00BB"; /* Unicode for &raquo; */
+        margin: 0 5px;
       }
     </style>
 
@@ -142,11 +199,20 @@
   </head>
 
   <body>
-    <nav>
-      <p>
-        <a href="/"><img src="/logo/komayo.svg" alt="Komayō" title="Komayō" height="22" width="92"></a> &raquo;
-        Jeu
-      </p>
+    <nav aria-label="Fil d'Ariane">
+      <ol vocab="https://schema.org/" typeof="BreadcrumbList" class="breadcrumb">
+        <li property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/">
+            <img property="image" src="/logo/komayo.svg" alt="Komayō" title="Komayō" height="22" width="92">
+            <meta property="name" content="Komayō">
+          </a>
+          <meta property="position" content="1">
+        </li>
+        <li property="itemListElement" typeof="ListItem">
+          <span property="name">Jeu</span>
+          <meta property="position" content="2">
+        </li>
+      </ol>
     </nav>
 
     <article>
