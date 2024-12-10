@@ -67,19 +67,6 @@
 
     <link href="/all.css" rel="stylesheet">
 
-    <style>
-      footer > p > a {
-        position: absolute;
-        top: var(--side-padding);
-        right: var(--side-padding);
-      }
-
-      footer > p > a > img {
-        height: 2em;
-        width: 2em;
-      }
-    </style>
-
     <script type="application/ld+json">
       [
         {
@@ -224,19 +211,18 @@
   </head>
 
   <body>
-    <header itemscope itemtype="https://schema.org/Organization">
-      <img itemprop="logo" src="/logo/komayo.svg" alt="Komayō" title="Komayō" width="512" height="125">
-      <meta itemprop="name" content="Sashité">
-    </header>
+    <header>
+      <a href="https://komayo.page/"><img src="/favicon/favicon.svg" alt="Komayō" width="512" height="512"></a>
 
-    <nav aria-label="breadcrumb">
-      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemscope itemtype="https://schema.org/ShortStory" itemprop="item" itemid="https://fr.komayo.page/" href="/"><span itemprop="name">Histoire de Fantôme</span></a>
-          <meta itemprop="position" content="1">
-        </li>
-      </ol>
-    </nav>
+      <nav aria-label="breadcrumb">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemscope itemtype="https://schema.org/ShortStory" itemprop="item" itemid="https://fr.komayo.page/" href="/"><span itemprop="name">Histoire de Fantôme</span></a>
+            <meta itemprop="position" content="1">
+          </li>
+        </ol>
+      </nav>
+    </header>
 
     <main>
       <article itemscope itemtype="https://schema.org/ShortStory">
@@ -308,13 +294,6 @@
       <p>
         &copy; 2023 Cyril Veltin.
         Tous droits réservés.
-        <a title="Changer de langue" href="https://komayo.page/"><img
-          width="448"
-          height="416"
-          src="/icon/change-language.svg"
-          alt="Choix de la langue"
-          title="Changer de langue"
-        ></a>
       </p>
     </footer>
   </body>

@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 @media (orientation: landscape) {
-  :where(html) {
+  html {
     --content-size: 100vh;
   }
 }
 
 @media (orientation: portrait) {
-  :where(html) {
+  html {
     --content-size: 100vw;
   }
 }
 
-:where(html) {
+html {
   --color-background: #ece9d6;
   --color-text: #292523;
   --color-title: #000;
@@ -57,6 +57,11 @@
   --font-size-4: calc(var(--content-size)/32);
 
   --side-padding: calc(1vw + 8px);
+
+  margin: 0;
+  padding: 0;
+
+  font-size: var(--font-size-4);
 }
 
 h1 {
@@ -69,15 +74,6 @@ h2 {
 
 h3 {
   font-size: var(--font-size-3);
-}
-
-:root {
-  font-size: var(--font-size-4);
-}
-
-html {
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -119,39 +115,74 @@ html[dir="rtl"] blockquote > * {
   border-right: thin solid var(--color-shadow);
 }
 
+html[dir="rtl"] header img {
+  transform: scaleX(-1);
+}
+
 body > header {
+  /* Enable flexbox layout */
+  display: flex;
+
+  /* Handle RTL/LTR automatically based on dir attribute */
+  flex-direction: row;
+
+  /* Align items vertically */
+  align-items: flex-end;
+
+  /* Allow items to wrap if needed */
+  flex-wrap: nowrap;
+
   margin: 0;
   padding: 0;
 }
 
+body > header a {
+  color: var(--color-title);
+}
+
+/* Make the image square while maintaining aspect ratio */
 body > header img {
+  /* Ensure image maintains aspect ratio */
+  object-fit: contain;
+
+  /* Prevent image from shrinking */
+  flex-shrink: 0;
+
   display: block;
-  height: 2em;
+  height: 3em;
   width: auto;
 }
 
-nav[aria-label="breadcrumb"] ol {
+/* Allow nav to take remaining space */
+body > header nav[aria-label="breadcrumb"] {
+  flex: 1;
+
+  /* Add some spacing between image and nav */
+  margin-inline-start: 1rem;
+}
+
+body > header > nav[aria-label="breadcrumb"] ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-nav[aria-label="breadcrumb"] ol li {
+body > header > nav[aria-label="breadcrumb"] ol li {
   display: inline;
   font-weight: lighter;
 }
 
-nav[aria-label="breadcrumb"] ol li:not(:last-child)::after {
+body > header > nav[aria-label="breadcrumb"] ol li:not(:last-child)::after {
   content: " \00BB"; /* Unicode for &raquo; */
   margin: 0 5px;
 }
 
-main > article li,
-main > article dd {
+body > main > article li,
+body > main > article dd {
   margin-inline: 2em;
 }
 
-main > nav li {
+body > main > nav li {
   margin-inline: var(--side-padding);
 }
 
@@ -168,15 +199,15 @@ body > main > article > picture > img {
   height: auto;
 }
 
-main > * blockquote,
-main > * dl,
-main > * ol,
-main > * ul {
+body > main > * blockquote,
+body > main > * dl,
+body > main > * ol,
+body > main > * ul {
   margin: 0;
   padding: 0;
 }
 
-main > article p {
+body > main > article p {
   text-align: justify;
 }
 
